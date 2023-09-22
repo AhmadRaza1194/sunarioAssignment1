@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Price Calculator</title>
+    <link rel="stylesheet" href="/stylelab.css">
+</head>
+<body>
+    <h1>Fruit Price Calculator</h1>
+    <table>
+        <thead>
+            <th colspan="2">Select a fruit</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Apple</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Orange</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Banana</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Grape</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Mango</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+        <table id="tab1">
+            <thead>
+                    <tr>
+                    <td><strong>Enter Fruit Name:</strong></td>
+                    <td><Input type="text" id="fru"></Input></td>
+                    <td><button onclick="calculatePrice()">Enter</button></td>
+                    </tr>
+            </thead>
+            <tbody id="result">
+            </tbody>
+            <tfoot>
+               <tr>
+                <td colspan="2"><h4>Total Price:</h4></td>
+               <td><span id="totalprice">0</span> $</td>
+               </tr>
+               <tr>
+                <td colspan="3" onclick="reset()"><button>Reset</button></td>
+               </tr>
+            </tfoot>
+        </table>
+    <script src="/scriptlab.js"></script>
+</body>
+</html>

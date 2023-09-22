@@ -1,0 +1,27 @@
+table{
+    background-color: #daf4f4;
+    padding: 5px;
+    text-align: center;
+}
+tfoot,thead{
+    background-color: #b4eded;
+    }
+    tbody tr:nth-child(odd) {
+    background-color: #daf4f4;
+    }
+    tbody{
+        background-color: #e9f9f9c1;
+    }
+    td,th{
+      padding: 5px;
+    }
+    input{
+        width: 80px;
+    }
+    button{
+        width: 100px;
+        height: 25px;
+        border-radius: 10px;
+        background-color: rgba(127, 253, 255, 0.293);
+        font-size: 15px;
+    }
