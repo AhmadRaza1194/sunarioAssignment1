@@ -1,4 +1,4 @@
-var totalprice=0;
+var totalprice=0,dis;
 function calculatePrice() {
     const selectedFruit = document.getElementById("fru").value;
     let price = 0;
@@ -36,19 +36,22 @@ function calculatePrice() {
     }
     if(selectedFruit == "Apple"){
            price=price-(price*10/100);
+           dis="10%";
     }
     else if(selectedFruit=="Banana")
     {
         price=price-(price*20/100);
+        dis="20%";
     }
       else{
         price;
+        dis="0%";
       }
       
     const resultElement = document.getElementById("result");
     let HTML;
     if (price > 0) {
-        HTML = "<tr><td colspan='2'>The price of "+ selectedFruit + " is:</td><td>"+price+"</td></tr>";
+        HTML = "<tr><td>The price of "+ selectedFruit + " is:</td><td>"+price+"</td><td>"+dis+" Discount</d></tr>";
     } else {
         HTML = "<tr><td colspan='2'>Sorry, we don't have a price for: </td><td>"+selectedFruit+"</td></tr>";
     }
@@ -57,6 +60,7 @@ function calculatePrice() {
     document.getElementById('totalprice').innerText=totalprice;
 }
 function reset(){
+    document.getElementById('fru').value="";
     totalprice=0;
     document.getElementById('totalprice').innerText=totalprice;
     document.getElementById("result").innerHTML="";
